@@ -1,25 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dashboard-answer</title>
-    <!-- BS5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script type="module" crossorigin src="/dashboard-answer/assets/main-2d761428.js"></script>
-    <link rel="stylesheet" href="/dashboard-answer/assets/main-4cfea7bd.css">
-  </head>
-  <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    
-    <footer class="footer">我是 footer</footer>
-    <!-- BS5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <!-- JS -->
-    
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dashboard-answer</title>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <!-- ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="module" crossorigin src="/dashboard-answer/assets/index-a7cf5219.js"></script>
+  <link rel="stylesheet" href="/dashboard-answer/assets/index-170d383a.css">
+</head>
+
+<body>
+  <div class="d-flex wrap">
+    <div class="asidenav bg-light p-6 d-flex flex-column justify-content-between">
+  <div><h1 class="logo mb-6"><a href="index.html">dashboard</a></h1>
+    <ul class="list-group list-unstyled fw-bold">
+      <li class="list-group-item mb-4" aria-disabled="true"><a class="d-flex align-items-center" href="index.html"><span
+            class="material-icons me-3">
+            assessment
+          </span>Dashboard</a></li>
+      <li class="list-group-item mb-4" aria-disabled="true"><a class="d-flex align-items-center" href="index.html"><span
+            class="material-icons me-3">
+            question_answer
+          </span>Question</a></li>
+      <li class="list-group-item mb-4" aria-disabled="true"><a class="d-flex align-items-center" href="index.html"><span
+            class="material-icons me-3">
+            assignment
+          </span>Assignment</a></li>
+      <li class="list-group-item mb-4" aria-disabled="true"><a class="d-flex align-items-center" href="index.html"><span
+            class="material-icons me-3">
+            video_library
+          </span>Course</a></li>
+      <li class="list-group-item mb-4 active" aria-disabled="true"><a class="d-flex align-items-center text-success"
+          href="index.html"><span class="material-icons me-3">
+            people
+          </span>Admin</a></li>
+      <li class="list-group-item" aria-disabled="true"><a class="d-flex align-items-center" href="index.html"><span
+            class="material-icons me-3">
+            settings
+          </span>Settings</a></li>
+    </ul></div>
+  <div class="d-flex">
+    <div class="account-photo d-flex align-items-center me-3">
+      <img src="/dashboard-answer/assets/andychen-f14fef59.jpeg" alt="account">
+    </div>
+    <div class="d-flex flex-column mt-auto">
+      <p class="fw-bold mb-0">Andy Chen</p>
+      <span class="text-muted fs-7">andy0401@mail.com</span>
+    </div>
+
+  </div>
+</div>      <div class="mx-auto">
+        <!-- 標題 -->
+        <div class="main p-6">
+          <div class="fw-bold d-flex align-items-center justify-content-between mb-5">
+            <div class="d-flex">
+              <h2 class="fs-4 me-5 mb-0">Admin</h2>
+              <div class="d-flex align-items-center btn-madel">
+                <span class="material-icons text-success me-2">add</span>
+                <span>Add New Admin</span>
+              </div>
+            </div>
+            <div class="d-flex">
+              <span class="material-icons me-4">search</span>
+              <span class="material-icons">
+                notifications_active
+              </span>
+            </div>
+          </div>
+          <!-- 帳號列表 表格 -->
+          <table class="table fs-6 mb-7">
+            <thead>
+              <tr class="fw-bold">
+                <th class="p-1 px-0 d-flex align-items-center" scope="col"><span>ID</span><span
+                    class="material-icons text-success ms-2 fs-6">
+                    arrow_downward
+                  </span></th>
+                <th class="py-1" scope="col">Name</th>
+                <th class="py-1" scope="col">Email</th>
+                <th class="py-1" scope="col">Verified</th>
+                <th class="py-1" scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="p-1 ps-0 py-6" scope="row">#1</th>
+                <td class="py-6">Emir Wicks</td>
+                <td class="py-6">emir.wicks@mail.com</td>
+                <td class="py-6">Yes</td>
+                <td class="py-6 pe-0 d-flex justify-content-end">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    visibility
+                  </span><span class="material-icons btn-madel">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th class="p-1 ps-0 py-6" scope="row">#2</th>
+                <td class="py-6">Zaina Goldsmith</td>
+                <td class="py-6">zaina.goldsmith@mail.com</td>
+                <td class="py-6">Yes</td>
+                <td class="py-6 pe-0 d-flex justify-content-end">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    visibility
+                  </span><span class="material-icons btn-madel">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th class="p-1 ps-0 py-6" scope="row">#3</th>
+                <td class="py-6">Mahima Lopez</td>
+                <td class="py-6">mahima.lopez@mail.com</td>
+                <td class="py-6">Yes</td>
+                <td class="py-6 pe-0 d-flex justify-content-end">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    visibility
+                  </span><span class="material-icons btn-madel">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th class="p-1 ps-0 py-6" scope="row">#4</th>
+                <td class="py-6">Emir Wicks</td>
+                <td class="py-6">emir.wicks@mail.com</td>
+                <td class="py-6">Yes</td>
+                <td class="py-6 pe-0 d-flex justify-content-end">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    visibility
+                  </span><span class="material-icons btn-madel">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th class="p-1 ps-0 py-6" scope="row">#5</th>
+                <td class="py-6">Annika Mcbride</td>
+                <td class="py-6">annika.mcbride@mail.com</td>
+                <td class="py-6">Yes</td>
+                <td class="py-6 pe-0 d-flex justify-content-end">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    visibility
+                  </span><span class="material-icons btn-madel">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <!-- ˊ6 -->
+              <tr>
+                <th class="p-1 ps-0 py-6" scope="row">#6</th>
+                <td class="py-6">Fatimah Clark</td>
+                <td class="py-6">fatimah.clark@mail.com</td>
+                <td class="py-6">Yes</td>
+                <td class="py-6 pe-0 d-flex justify-content-end">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    visibility
+                  </span><span class="material-icons btn-madel">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th class="p-1 ps-0 py-6" scope="row">#7</th>
+                <td class="py-6">Klaudia Rhodes</td>
+                <td class="py-6">klaudia.rhodes@mail.com</td>
+                <td class="py-6">Yes</td>
+                <td class="py-6 pe-0 d-flex justify-content-end">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    visibility
+                  </span><span class="material-icons btn-madel">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th class="p-1 ps-0 py-6" scope="row">#8</th>
+                <td class="py-6">Tillie Lucero</td>
+                <td class="py-6">tillie.lucero@mail.com</td>
+                <td class="py-6">Yes</td>
+                <td class="py-6 pe-0 d-flex justify-content-end">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    visibility
+                  </span><span class="material-icons btn-madel">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th class="p-1 ps-0 py-6" scope="row">#9</th>
+                <td class="py-6">Sabrina Stephenson</td>
+                <td class="py-6">sabrina.stephenson@mail.com</td>
+                <td class="py-6">Yes</td>
+                <td class="py-6 pe-0 d-flex justify-content-end">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    visibility
+                  </span><span class="material-icons btn-madel">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th class="p-1 ps-0 py-6" scope="row">#10</th>
+                <td class="py-6">Annie Smith</td>
+                <td class="py-6">annie.smith@mail.com</td>
+                <td class="py-6">Yes</td>
+                <td class="py-6 pe-0 d-flex justify-content-end">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    visibility
+                  </span><span class="material-icons btn-madel">
+                    edit
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- 帳號摺疊內容 Modal account card-->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content p-6 d-flex flex-row gap-4">
+                <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+                <div class="overflow-hidden admin-photo"><img src="/dashboard-answer/assets/emir-3d7a4b39.jpeg" alt="Emir Wicks"></div>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2">#1</li>
+                  <li>Admin</li>
+                  <li class="fs-4 fw-bold mb-2">Emir Wicks</li>
+                  <li class="fs-7 text-muted mb-3">emir.wicks@mail.com</li>
+                  <li>
+                    <!-- Accordion account info -->
+                    <div class="accordion accordion-flush accordion-account" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <span class="bg-light py-1 px-2">Verified</span>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body"><button type="button" class="btn btn-outline-danger fw-bold me-3">Deactivate</button><button type="button" class="btn btn-success">Edit</button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 頁碼 -->
+          <nav aria-label="Page navigation example" class="d-flex justify-content-end">
+            <ul class="pagination
+            mb-0">
+              <li class="page-item">
+                <a class="page-link text-success" href="#" aria-label="Previous">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link text-muted" href="#">2</a></li>
+              <li class="page-item"><a class="page-link text-muted" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link text-success" href="#" aria-label="Next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+      
+</body>
+
 </html>

@@ -1,0 +1,35 @@
+.asidenav{
+  width: 296px;
+
+  .active {
+    position: relative;
+    display: flex;
+    align-items: center;
+  
+    &:before {
+      position: absolute;
+      content:"";
+      height: 32px;
+      left:-32px;
+      border-left: 4px solid $success;
+    }
+  }
+}
+
+.logo a {
+  display: block;
+  background-image: url(../images/logo-ANSWER.svg);
+  background-size: cover;
+  width: 151px;
+  height: 40px;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.account-photo{
+  width: 40px;
+  height: 40px;
+  border-radius: 99px;
+  overflow: hidden;
+}

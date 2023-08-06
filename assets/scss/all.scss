@@ -1,5 +1,40 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+// BOOTSTRAP 放在最前頭
+@import "../node_modules/bootstrap/scss/functions";
 
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
 
-@import './pages/index.scss';
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+
+// BS layout & components 建議保留
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+
+// BS optional
+@import "../node_modules/bootstrap/scss/tables";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/accordion";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/pagination";
+
+// BS Helpers
+@import "../node_modules/bootstrap/scss/helpers";
+
+// BS Utilities
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+// 以下匯入其他
+@import './base/base';
+@import './base/fontStyle';
+@import './base/utility';
+@import './components/buttonMadel';
+@import './components/viewMadel';
+@import './components/pagination';
+@import './layout/asideNav';
+@import './layout/main';
+// @import './pages/index.scss';

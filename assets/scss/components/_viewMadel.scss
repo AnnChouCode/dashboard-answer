@@ -1,0 +1,40 @@
+.modal-dialog {
+    width: 480px;
+
+    .btn-close {
+        right: 32px;
+    }
+
+    .admin-photo {
+        width: 141px;
+        height: 141px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .accordion {
+        &-button {
+            height: 25px;
+        }
+
+        &-button::after{
+            color: $success;
+        }
+
+        &-account {
+            width: 258px;
+        }
+
+        &-body{
+            padding:28px 0 0 0;
+        }
+    }
+
+    .btn-outline-danger, .btn-success{
+        padding:8px 33px;
+    }
+}

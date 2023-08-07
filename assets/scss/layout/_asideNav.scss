@@ -1,6 +1,10 @@
 .asidenav{
   width: 296px;
 
+  li:hover{
+    background-color: $gray-400;
+  }
+
   .active {
     position: relative;
     display: flex;

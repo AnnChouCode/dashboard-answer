@@ -1,3 +1,7 @@
 .btn-madel{
     cursor: pointer;
+
+    &:hover{
+        color:$success;
+    }
 }

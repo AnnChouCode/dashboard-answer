@@ -7,14 +7,13 @@
 
   .active {
     position: relative;
-    display: flex;
-    align-items: center;
+    color:$success;
   
     &:before {
       position: absolute;
-      content:"";
+      content:"";      
       height: 32px;
-      left:0;
+      left:-32px;
       border-left: 4px solid $success;
     }
   }

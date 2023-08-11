@@ -21,6 +21,8 @@
 @import "../node_modules/bootstrap/scss/transitions";
 @import "../node_modules/bootstrap/scss/buttons";
 @import "../node_modules/bootstrap/scss/pagination";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/forms";
 
 // BS Helpers
 @import "../node_modules/bootstrap/scss/helpers";
@@ -32,8 +34,9 @@
 @import './base/base';
 @import './base/fontStyle';
 @import './base/utility';
-@import './components/buttonModel';
-@import './components/viewModel';
+@import './components/buttonModal';
+@import './components/viewModal';
 @import './components/pagination';
+@import './components/dropdownMenuButton';
 @import './layout/asideNav';
 @import './layout/main';

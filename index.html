@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ANSWER-admin</title>
+  <link rel="shortcut icon" href="https://github.com/AnnChouCode/dashboard-answer/blob/main/assets/images/favicon.png">
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -112,7 +113,7 @@
                 <td class="py-3">zaina.goldsmith@mail.com</td>
                 <td class="py-3">Yes</td>
                 <td class="py-3 pe-0 d-flex justify-content-end">
-                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal-sample">
                     visibility
                   </span><span class="material-icons btn-madel">
                     edit
@@ -125,7 +126,7 @@
                 <td class="py-3">mahima.lopez@mail.com</td>
                 <td class="py-3">Yes</td>
                 <td class="py-3 pe-0 d-flex justify-content-end">
-                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal-sample">
                     visibility
                   </span><span class="material-icons btn-madel">
                     edit
@@ -138,7 +139,7 @@
                 <td class="py-3">emir.wicks@mail.com</td>
                 <td class="py-3">Yes</td>
                 <td class="py-3 pe-0 d-flex justify-content-end">
-                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal-sample">
                     visibility
                   </span><span class="material-icons btn-madel">
                     edit
@@ -151,7 +152,7 @@
                 <td class="py-3">annika.mcbride@mail.com</td>
                 <td class="py-3">Yes</td>
                 <td class="py-3 pe-0 d-flex justify-content-end">
-                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal-sample">
                     visibility
                   </span><span class="material-icons btn-madel">
                     edit
@@ -165,7 +166,7 @@
                 <td class="py-3">fatimah.clark@mail.com</td>
                 <td class="py-3">Yes</td>
                 <td class="py-3 pe-0 d-flex justify-content-end">
-                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal-sample">
                     visibility
                   </span><span class="material-icons btn-madel">
                     edit
@@ -178,7 +179,7 @@
                 <td class="py-3">klaudia.rhodes@mail.com</td>
                 <td class="py-3">Yes</td>
                 <td class="py-3 pe-0 d-flex justify-content-end">
-                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal-sample">
                     visibility
                   </span><span class="material-icons btn-madel">
                     edit
@@ -191,7 +192,7 @@
                 <td class="py-3">tillie.lucero@mail.com</td>
                 <td class="py-3">Yes</td>
                 <td class="py-3 pe-0 d-flex justify-content-end">
-                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal-sample">
                     visibility
                   </span><span class="material-icons btn-madel">
                     edit
@@ -204,7 +205,7 @@
                 <td class="py-3">sabrina.stephenson@mail.com</td>
                 <td class="py-3">Yes</td>
                 <td class="py-3 pe-0 d-flex justify-content-end">
-                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal-sample">
                     visibility
                   </span><span class="material-icons btn-madel">
                     edit
@@ -217,7 +218,7 @@
                 <td class="py-3">annie.smith@mail.com</td>
                 <td class="py-3">Yes</td>
                 <td class="py-3 pe-0 d-flex justify-content-end">
-                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="material-icons me-4 btn-madel" data-bs-toggle="modal" data-bs-target="#exampleModal-sample">
                     visibility
                   </span><span class="material-icons btn-madel">
                     edit
@@ -227,38 +228,48 @@
             </tbody>
           </table>
           <!-- 帳號摺疊內容 Modal account card-->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content rounded-1 p-32 d-flex flex-row gap-4">
-                <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
-                  aria-label="Close"></button>
-                <div class="overflow-hidden admin-photo"><img src="/dashboard-answer/assets/emir-3d7a4b39.jpeg" alt="Emir Wicks"></div>
-                <ul class="list-unstyled mb-0">
-                  <li class="mb-2">#1</li>
-                  <li>Admin</li>
-                  <li class="fs-4 fw-bold mb-2">Emir Wicks</li>
-                  <li class="fs-7 text-muted mb-3">emir.wicks@mail.com</li>
-                  <li>
-                    <!-- Accordion account info -->
-                    <div class="accordion accordion-flush accordion-account" id="accordionFlushExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                          <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            <span class="bg-light py-1 px-2">Verified</span>
-                          </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body"><button type="button" class="btn btn-outline-danger rounded-1 fw-bold me-3">Deactivate</button><button type="button" class="btn btn-success rounded-1">Edit</button></div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+          <!-- 帳號摺疊內容 Modal account card-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content rounded-1 p-32 d-flex flex-row gap-4">
+    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+      aria-label="Close"></button>
+    <div class="overflow-hidden admin-photo"><img src="/dashboard-answer/assets/emir-3d7a4b39.jpeg" alt="Emir Wicks"></div>
+    <ul class="list-unstyled mb-0">
+      <li class="mb-2">#1</li>
+      <li>Admin</li>
+      <li class="fs-4 fw-bold mb-2">Emir Wicks</li>
+      <li class="fs-7 text-muted mb-3">emir.wicks@mail.com</li>
+      <li>
+        <!-- Accordion account info -->
+        <div class="accordion accordion-flush accordion-account" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <span class="bg-light py-1 px-2">Verified</span>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"><button type="button" class="btn btn-outline-danger rounded-1 fw-bold me-3">Deactivate</button><button type="button" class="btn btn-success rounded-1">Edit</button></div>
             </div>
           </div>
-          <!-- 頁碼 -->
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>          <!-- SAMPLE 帳號摺疊內容 Modal account card-->
+<div class="modal fade" id="exampleModal-sample" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content rounded-1 p-32 d-flex flex-row gap-4">
+    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+      aria-label="Close"></button>
+    <p>此為彈跳視窗樣本，內容請點選 ID #1 項目觀看</p>    
+  </div>
+</div>
+</div>          <!-- 頁碼 -->
           <nav aria-label="Page navigation example" class="mt-auto">
             <ul class="pagination mb-0 justify-content-end">
               <li class="page-item">
